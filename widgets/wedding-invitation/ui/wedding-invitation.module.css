@@ -11,26 +11,26 @@
   background: var(--invite-cream);
   font-family: "shablon3", Arial, sans-serif;
   font-weight: 700;
+}
 
-  img,
-  svg {
-    display: block;
-  }
+.invite img,
+.invite svg {
+  display: block;
+}
 
-  img {
-    max-width: 100%;
-  }
+.invite img {
+  max-width: 100%;
+}
 
-  button,
-  input {
-    font: inherit;
-  }
+.invite button,
+.invite input {
+  font: inherit;
+}
 
-  h1,
-  h2,
-  p {
-    margin: 0;
-  }
+.invite h1,
+.invite h2,
+.invite p {
+  margin: 0;
 }
 
 .curve {
@@ -93,11 +93,11 @@
   font-size: 15px;
   line-height: 1.04;
   text-align: left;
+}
 
-  p:last-child {
-    min-width: 86px;
-    padding-top: 7px;
-  }
+.heroQuotes p:last-child {
+  min-width: 86px;
+  padding-top: 7px;
 }
 
 .heroKids {
@@ -215,36 +215,36 @@
   width: 290px;
   margin: 45px auto 0;
   padding: 24px 20px 27px;
+}
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 205px;
-    height: 1px;
-    background: currentColor;
-    transform: translateX(-50%);
-  }
+.gatheringCard::before,
+.gatheringCard::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 205px;
+  height: 1px;
+  background: currentColor;
+  transform: translateX(-50%);
+}
 
-  &::before {
-    top: 0;
-  }
+.gatheringCard::before {
+  top: 0;
+}
 
-  &::after {
-    bottom: 0;
-  }
+.gatheringCard::after {
+  bottom: 0;
+}
 
-  time {
-    font-size: 58px;
-    font-weight: 600;
-    line-height: 0.9;
-  }
+.gatheringCard time {
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 0.9;
+}
 
-  p {
-    font-size: 21px;
-    line-height: 1;
-  }
+.gatheringCard p {
+  font-size: 21px;
+  line-height: 1;
 }
 
 .gatheringHeart {
@@ -319,17 +319,17 @@
     display: grid;
     min-height: 100vh;
     place-items: center;
+  }
 
-    &::before {
-      content: "пожалуйста, откройте приглашение на телефоне";
-      max-width: 620px;
-      color: var(--invite-burgundy);
-      font-size: 28px;
-      text-align: center;
-    }
+  .invite::before {
+    content: "пожалуйста, откройте приглашение на телефоне";
+    max-width: 620px;
+    color: var(--invite-burgundy);
+    font-size: 28px;
+    text-align: center;
+  }
 
-    > * {
-      display: none;
-    }
+  .invite > * {
+    display: none;
   }
 }

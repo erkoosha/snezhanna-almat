@@ -6,7 +6,7 @@ import { RsvpForm } from "@/features/rsvp"
 import { Curve, Heart } from "@/shared/ui/decorative-svg"
 import { Marquee } from "@/shared/ui/marquee"
 
-import styles from "./wedding-invitation.module.scss"
+import styles from "./wedding-invitation.module.css"
 
 type LinesProps = {
   lines: readonly string[]

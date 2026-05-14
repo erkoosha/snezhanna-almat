@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 
-import styles from "./marquee.module.scss"
+import styles from "./marquee.module.css"
 
 type MarqueeProps = {
   className?: string

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import styles from "./rsvp-form.module.scss"
+import styles from "./rsvp-form.module.css"
 
 type RsvpFormProps = {
   attendanceLegend: string
