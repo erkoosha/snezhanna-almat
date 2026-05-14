@@ -30,7 +30,6 @@ export function WeddingInvitation() {
         <Curve className={`${styles.curve} ${styles.curveTop}`} />
         <Heart className={`${styles.heart} ${styles.heroHeartTop}`} />
 
-        <p className={styles.heroLead}>{invitation.hero.lead}</p>
         <h1 className={styles.heroTitle} id="hero-title">
           {invitation.hero.title}
         </h1>
@@ -122,7 +121,9 @@ export function WeddingInvitation() {
           <time dateTime={invitation.gathering.dateTime}>
             {invitation.gathering.time}
           </time>
-          <p>{invitation.gathering.description}</p>
+          {invitation.gathering.description && (
+            <p>{invitation.gathering.description}</p>
+          )}
         </div>
 
         <Heart className={`${styles.heart} ${styles.gatheringHeart}`} />
@@ -132,9 +133,7 @@ export function WeddingInvitation() {
         <h2 className="sr-only" id="rsvp-title">
           {invitation.rsvp.title}
         </h2>
-        <p className={styles.rsvpIntro}>
-          <Lines lines={invitation.rsvp.intro} />
-        </p>
+        <p className={styles.rsvpIntro}>{invitation.rsvp.intro}</p>
 
         <RsvpForm
           attendanceLegend={invitation.rsvp.attendanceLegend}
