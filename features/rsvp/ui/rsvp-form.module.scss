@@ -1,0 +1,85 @@
+.form {
+  display: grid;
+  gap: 19px;
+}
+
+.field input {
+  width: 100%;
+  height: 38px;
+  padding: 0;
+  color: var(--invite-cream);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(253, 249, 226, 0.8);
+  outline: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.field input::placeholder {
+  color: rgba(253, 249, 226, 0.62);
+}
+
+.note {
+  font-size: 18px;
+  line-height: 1.04;
+}
+
+.checkboxes {
+  display: grid;
+  gap: 8px;
+  margin: -2px 0 19px;
+  padding: 0;
+  border: 0;
+}
+
+.checkboxes label {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  min-height: 28px;
+  color: var(--invite-cream);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.checkboxes input {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+  border: 2px solid var(--invite-cream);
+  border-radius: 0;
+}
+
+.checkboxes input:checked {
+  background:
+    linear-gradient(
+      45deg,
+      transparent 41%,
+      var(--invite-cream) 43%,
+      var(--invite-cream) 57%,
+      transparent 59%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 41%,
+      var(--invite-cream) 43%,
+      var(--invite-cream) 57%,
+      transparent 59%
+    );
+}
+
+.submit {
+  width: min(342px, calc(100vw - 52px));
+  height: 43px;
+  justify-self: center;
+  color: var(--invite-burgundy);
+  background: var(--invite-cream);
+  border: 0;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}

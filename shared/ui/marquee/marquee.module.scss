@@ -1,0 +1,44 @@
+.marquee {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  color: var(--invite-cream);
+  background: var(--invite-burgundy);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.track {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  align-items: center;
+  animation: marquee 13s linear infinite;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 16.666%;
+  padding: 0 18px;
+  text-align: center;
+}
+
+.light {
+  position: static;
+  color: var(--invite-burgundy);
+  background: var(--invite-cream);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

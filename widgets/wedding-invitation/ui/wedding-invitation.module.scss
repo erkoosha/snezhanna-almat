@@ -1,0 +1,335 @@
+.invite {
+  --invite-cream: #fdf9e2;
+  --invite-burgundy: #740e23;
+  --invite-ink: #631b25;
+
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: var(--invite-ink);
+  background: var(--invite-cream);
+  font-family: "shablon3", Arial, sans-serif;
+  font-weight: 700;
+
+  img,
+  svg {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+}
+
+.curve {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.heart {
+  fill: currentColor;
+}
+
+.hero {
+  position: relative;
+  min-height: 760px;
+  padding-top: 238px;
+  color: var(--invite-burgundy);
+  text-align: center;
+}
+
+.curveTop {
+  position: absolute;
+  top: -2px;
+  left: -72px;
+  width: 536px;
+  height: 92px;
+}
+
+.heroHeartTop {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  width: 43px;
+  transform: translateX(-50%);
+}
+
+.heroLead {
+  margin: 0 0 -4px;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.heroTitle {
+  position: relative;
+  z-index: 2;
+  font-size: min(62px, 13.3vw);
+  font-weight: 600;
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+.heroQuotes {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  gap: 78px;
+  width: min(342px, calc(100vw - 48px));
+  margin: 33px auto 0;
+  color: var(--invite-burgundy);
+  font-size: 15px;
+  line-height: 1.04;
+  text-align: left;
+
+  p:last-child {
+    min-width: 86px;
+    padding-top: 7px;
+  }
+}
+
+.heroKids {
+  position: absolute;
+  z-index: 2;
+  bottom: 29px;
+  left: 50%;
+  width: min(395px, 101vw);
+  max-width: none;
+  transform: translateX(-50%);
+}
+
+.dateSection {
+  position: relative;
+  padding: 76px 25px 48px;
+  text-align: center;
+}
+
+.dateText {
+  color: var(--invite-burgundy);
+  font-size: min(21px, 5.3vw);
+  line-height: 1.08;
+}
+
+.dateTitle {
+  margin-top: 3px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  animation: fade-in-right 2s ease both;
+}
+
+.calendar {
+  position: relative;
+  z-index: 1;
+  width: min(330px, calc(100vw - 60px));
+  height: auto;
+  margin: 31px auto 0;
+}
+
+.dateDecor {
+  position: absolute;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+}
+
+.dateDecorPhoto {
+  top: 235px;
+  left: 50%;
+  width: 72px;
+  transform: translateX(-50%) rotate(28deg);
+}
+
+.dateDecorSave {
+  right: calc(50% - 165px);
+  bottom: 59px;
+  width: 69px;
+}
+
+.locationSection {
+  position: relative;
+  padding: 74px 24px 72px;
+  color: var(--invite-cream);
+  background: var(--invite-burgundy);
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 47px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.locationName {
+  margin-top: 37px;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.locationAddress {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.08;
+}
+
+.mapButton {
+  display: inline-grid;
+  min-width: 176px;
+  height: 43px;
+  margin-top: 30px;
+  padding: 0 29px;
+  place-items: center;
+  color: var(--invite-burgundy);
+  background: var(--invite-cream);
+  border-radius: 999px;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.gatheringSection {
+  position: relative;
+  min-height: 362px;
+  padding: 78px 24px 66px;
+  color: var(--invite-burgundy);
+  text-align: center;
+}
+
+.gatheringCard {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  width: 290px;
+  margin: 45px auto 0;
+  padding: 24px 20px 27px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 205px;
+    height: 1px;
+    background: currentColor;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  time {
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 0.9;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 1;
+  }
+}
+
+.gatheringHeart {
+  width: 42px;
+  margin: 31px auto 0;
+}
+
+.rsvpSection {
+  padding: 47px 13px 49px;
+  color: var(--invite-cream);
+  background: var(--invite-burgundy);
+}
+
+.rsvpIntro {
+  width: min(320px, 100%);
+  margin: 0 auto 31px;
+  font-size: 18px;
+  line-height: 1.06;
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  min-height: 252px;
+  padding-top: 96px;
+  color: var(--invite-cream);
+  background: var(--invite-burgundy);
+  text-align: center;
+}
+
+.footerTitle {
+  font-size: min(41px, 9.8vw);
+  line-height: 0.88;
+}
+
+.footerNames {
+  margin-top: 3px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.footerCurve {
+  position: absolute;
+  bottom: 18px;
+  left: -77px;
+  width: 540px;
+  height: 92px;
+}
+
+.footerHeart {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  width: 43px;
+  transform: translateX(-50%);
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 641px) {
+  .invite {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+
+    &::before {
+      content: "пожалуйста, откройте приглашение на телефоне";
+      max-width: 620px;
+      color: var(--invite-burgundy);
+      font-size: 28px;
+      text-align: center;
+    }
+
+    > * {
+      display: none;
+    }
+  }
+}
