@@ -16,6 +16,10 @@
   font-weight: 700;
 }
 
+.field input:disabled {
+  opacity: 0.72;
+}
+
 .field input::placeholder {
   color: rgba(253, 249, 226, 0.62);
 }
@@ -53,6 +57,10 @@
   border-radius: 0;
 }
 
+.checkboxes input:disabled {
+  opacity: 0.72;
+}
+
 .checkboxes input:checked {
   background:
     linear-gradient(
@@ -71,6 +79,14 @@
     );
 }
 
+.error {
+  margin: -8px 0 4px;
+  color: var(--invite-cream);
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+}
+
 .submit {
   width: min(342px, calc(100vw - 52px));
   height: 43px;
@@ -82,4 +98,9 @@
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.submit:disabled {
+  cursor: default;
+  opacity: 0.82;
 }

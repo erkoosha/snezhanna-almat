@@ -66,11 +66,6 @@ export const weddingInvitation = {
     guestNamePlaceholder: "Имя и фамилия",
     note: "Если будете с парой, то укажите оба имени",
     attendanceLegend: "Ваш ответ",
-    options: [
-      "Я с удовольствием приду",
-      "Приду с парой",
-      "К сожалению, не смогу присутствовать",
-    ],
     submitLabel: "отправить",
     submittedLabel: "отправлено",
   },

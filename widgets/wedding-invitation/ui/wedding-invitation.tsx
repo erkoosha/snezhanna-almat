@@ -140,7 +140,6 @@ export function WeddingInvitation() {
           guestNameLabel={invitation.rsvp.guestNameLabel}
           guestNamePlaceholder={invitation.rsvp.guestNamePlaceholder}
           note={invitation.rsvp.note}
-          options={invitation.rsvp.options}
           submitLabel={invitation.rsvp.submitLabel}
           submittedLabel={invitation.rsvp.submittedLabel}
         />
