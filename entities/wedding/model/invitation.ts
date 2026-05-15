@@ -76,6 +76,11 @@ export const weddingInvitation = {
     marquee: "17.06.2026",
     title: "мы вас очень ждем!",
     names: "ваши Алмат и Снежанна",
+    credit: {
+      handle: "@dreamoferkosha",
+      href: "https://www.instagram.com/dreamoferkosha/",
+      label: "Developed by",
+    },
   },
 } as const
 

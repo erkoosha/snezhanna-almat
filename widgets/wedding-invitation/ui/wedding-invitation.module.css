@@ -70,7 +70,7 @@
 .heroMusicToggle {
   position: absolute;
   z-index: 5;
-  top: 124;
+  top: 136px;
   right: -6px;
   transform: translateX(-50%) rotate(343deg);
 }
@@ -270,7 +270,7 @@
 
 .footer {
   position: relative;
-  min-height: 252px;
+  min-height: 318px;
   padding-top: 96px;
   color: var(--invite-cream);
   background: var(--invite-burgundy);
@@ -288,9 +288,30 @@
   line-height: 1;
 }
 
+.footerCredit {
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  left: 18px;
+  z-index: 2;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  opacity: 0.78;
+}
+
+.footerCredit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .footerCurve {
   position: absolute;
-  bottom: 18px;
+  bottom: 84px;
   left: -77px;
   width: 540px;
   height: 92px;
@@ -298,7 +319,7 @@
 
 .footerHeart {
   position: absolute;
-  bottom: 3px;
+  bottom: 69px;
   left: 50%;
   width: 43px;
   transform: translateX(-50%);

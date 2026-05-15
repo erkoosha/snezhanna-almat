@@ -157,6 +157,16 @@ export function WeddingInvitation() {
         <Heart className={`${styles.heart} ${styles.footerHeart}`} />
         <p className={styles.footerTitle}>{invitation.footer.title}</p>
         <p className={styles.footerNames}>{invitation.footer.names}</p>
+        <p className={styles.footerCredit}>
+          {invitation.footer.credit.label}{" "}
+          <a
+            href={invitation.footer.credit.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {invitation.footer.credit.handle}
+          </a>
+        </p>
       </footer>
     </main>
   )

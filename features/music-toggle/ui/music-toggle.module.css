@@ -1,3 +1,34 @@
+.root {
+  display: inline-grid;
+  width: 64px;
+  height: 64px;
+  place-items: center;
+}
+
+.hint {
+  position: absolute;
+  bottom: calc(100% + 20px);
+  width: max-content;
+  color: var(--invite-burgundy);
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  animation: hint-pulse 1.7s ease-in-out infinite;
+}
+
+.hint::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateX(-50%) rotate(45deg);
+}
+
 .button {
   display: inline-grid;
   width: 64px;
@@ -25,4 +56,17 @@
 .button svg {
   width: 35px;
   height: 35px;
+}
+
+@keyframes hint-pulse {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
 }
