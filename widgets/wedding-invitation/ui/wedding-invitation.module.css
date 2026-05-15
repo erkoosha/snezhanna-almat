@@ -67,6 +67,14 @@
   transform: translateX(-50%);
 }
 
+.heroMusicToggle {
+  position: absolute;
+  z-index: 5;
+  top: 124;
+  right: -6px;
+  transform: translateX(-50%) rotate(343deg);
+}
+
 .heroTitle {
   position: relative;
   z-index: 2;

@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Fragment } from "react"
 
 import { weddingInvitation } from "@/entities/wedding/model/invitation"
+import { MusicToggle } from "@/features/music-toggle"
 import { RsvpForm } from "@/features/rsvp"
 import { Curve, Heart } from "@/shared/ui/decorative-svg"
 import { Marquee } from "@/shared/ui/marquee"
@@ -29,6 +30,10 @@ export function WeddingInvitation() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <Curve className={`${styles.curve} ${styles.curveTop}`} />
         <Heart className={`${styles.heart} ${styles.heroHeartTop}`} />
+        <MusicToggle
+          className={styles.heroMusicToggle}
+          src={invitation.hero.music.src}
+        />
 
         <h1 className={styles.heroTitle} id="hero-title">
           {invitation.hero.title}

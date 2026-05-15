@@ -17,6 +17,9 @@ export const weddingInvitation = {
       height: 560,
     },
     marquee: "вы приглашены",
+    music: {
+      src: "/wedding/music.mp4",
+    },
   },
   date: {
     title: "17.06.2026",
