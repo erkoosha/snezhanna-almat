@@ -165,10 +165,10 @@ export function RsvpForm({
   return (
     <form className={styles.form} onSubmit={handleSubmit} noValidate>
       <label className={styles.field}>
-        <span className="sr-only">{guestNameLabel}</span>
         <input
           type="text"
           name="guest_name"
+          aria-label={guestNameLabel}
           placeholder={guestNamePlaceholder}
           required
           disabled={isSubmitting || isSubmitted}
